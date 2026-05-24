@@ -718,12 +718,12 @@ MOBILE IMPROVEMENTS
 
 @media(max-width:768px){
 
+    /* HEADER */
     .main-header{
         flex-direction:row;
         justify-content:center;
         align-items:center;
         gap:10px;
-
         padding:10px 12px;
     }
 
@@ -752,32 +752,33 @@ MOBILE IMPROVEMENTS
         margin-top:2px;
         line-height:1.2;
     }
-}
 
     /* SIDEBAR */
     .sidebar{
-        padding:12px;
+        width:100%;
+        padding:10px;
         min-height:auto;
         position:relative;
     }
 
     .sidebar ul li{
-        margin-bottom:10px;
+        margin-bottom:8px;
     }
 
     .sidebar ul li a{
-        padding:12px;
+        padding:10px 12px;
         font-size:14px;
         gap:10px;
+        border-radius:12px;
     }
 
     .sidebar ul li a img{
-        width:35px;
-        height:35px;
-        padding:5px;
+        width:32px;
+        height:32px;
+        padding:4px;
     }
 
-    /* MAIN CONTENT */
+    /* MAIN */
     main{
         padding:10px;
     }
@@ -798,22 +799,47 @@ MOBILE IMPROVEMENTS
 
     /* STEP CARDS */
     .step{
-        padding:20px;
-        gap:15px;
+        flex-direction:row;
+        align-items:flex-start;
+        text-align:left;
+
+        padding:18px;
+        gap:14px;
     }
 
     .step img{
-        width:65px;
-        height:65px;
+        width:55px;
+        height:55px;
+        padding:8px;
     }
 
     .step-text h3{
-        font-size:22px;
+        font-size:18px;
+        margin-bottom:5px;
     }
 
     .step-text p{
+        font-size:13px;
+        line-height:1.6;
+    }
+
+    /* ROUTE BUTTONS */
+    .route-buttons{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+
+    .route-btn{
+        min-height:75px;
         font-size:14px;
-        line-height:1.7;
+        padding:12px 15px;
+        border-radius:14px;
+    }
+
+    .route-btn img{
+        width:40px;
+        height:40px;
+        padding:5px;
     }
 
     /* BUTTONS */
@@ -821,23 +847,8 @@ MOBILE IMPROVEMENTS
     .submit-btn{
         width:100%;
         text-align:center;
-        font-size:15px;
-    }
-
-    /* ROUTE BUTTONS */
-    .route-buttons{
-        grid-template-columns:1fr;
-    }
-
-    .route-btn{
-        min-height:80px;
-        font-size:15px;
-        padding:15px;
-    }
-
-    .route-btn img{
-        width:45px;
-        height:45px;
+        font-size:14px;
+        padding:12px;
     }
 
     /* NEWS */
@@ -847,7 +858,7 @@ MOBILE IMPROVEMENTS
 
     .card-image{
         height:auto;
-        max-height:300px;
+        max-height:250px;
     }
 
     /* FORM */
@@ -870,23 +881,32 @@ MOBILE IMPROVEMENTS
         max-height:85%;
     }
 
-    /* EVACUATION IMAGE */
-    .evacuation-image-container{
-        padding:10px;
-    }
-
     /* FOOTER */
     footer{
         padding:18px;
         font-size:14px;
     }
+
+    /* SEARCH */
+    .search-box{
+        margin-bottom:12px;
+    }
+
+    .search-box input{
+        padding:12px 14px;
+        font-size:14px;
+    }
 }
 
 /* EXTRA SMALL DEVICES */
-@media (max-width: 480px){
+@media (max-width:480px){
 
     .header-text h1{
-        font-size:18px;
+        font-size:14px;
+    }
+
+    .header-text p{
+        font-size:10px;
     }
 
     .content h2{
@@ -894,16 +914,10 @@ MOBILE IMPROVEMENTS
     }
 
     .step-text h3{
-        font-size:18px;
+        font-size:16px;
     }
 
     .route-btn{
-        font-size:14px;
-    }
-
-    .excel-link,
-    .submit-btn{
-        padding:12px;
-        font-size:14px;
+        font-size:13px;
     }
 }
