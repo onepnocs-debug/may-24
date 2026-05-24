@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report Submitted</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,31,77,0.85), rgba(0,31,77,0.85)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.success-box{
+    width:90%;
+    max-width:600px;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    border:2px solid rgba(255,255,255,0.2);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.check-icon{
+    width:120px;
+    height:120px;
+
+    margin:auto;
+    margin-bottom:25px;
+
+    background:#22c55e;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:60px;
+    font-weight:bold;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.8;
+    color:#dbe8ff;
+}
+
+.home-btn{
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 30px;
+
+    background:#d4a017;
+
+    color:#001f4d;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:0.3s ease;
+}
+
+.home-btn:hover{
+    transform:translateY(-3px);
+    background:#f4c542;
+}
+
+@media(max-width:768px){
+
+    .success-box{
+        padding:35px 25px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .check-icon{
+        width:90px;
+        height:90px;
+        font-size:45px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="success-box">
+
+    <div class="check-icon">
+        ✓
+    </div>
+
+    <h1>Report Already Sent!</h1>
+
+    <p>
+        Your incident or hazard report has been successfully submitted.
+        Thank you for helping keep the workplace safe.
+    </p>
+
+    <a href="index.html" class="home-btn">
+        Back to Home
+    </a>
+
+</div>
+
+</body>
+</html>
