@@ -712,3 +712,191 @@ textarea{
     }
 }
 
+/* =========================================
+MOBILE IMPROVEMENTS
+========================================= */
+
+@media (max-width: 768px){
+
+    body{
+        background-attachment:scroll;
+    }
+
+    /* HEADER */
+    .main-header{
+        padding:15px 10px;
+        gap:12px;
+    }
+
+    .header-text h1{
+        font-size:22px;
+        line-height:1.3;
+    }
+
+    .header-text p{
+        font-size:14px;
+    }
+
+    .header-logo{
+        width:70px;
+        height:70px;
+    }
+
+    .header-logo img{
+        width:60px;
+        height:60px;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+        padding:12px;
+        min-height:auto;
+        position:relative;
+    }
+
+    .sidebar ul li{
+        margin-bottom:10px;
+    }
+
+    .sidebar ul li a{
+        padding:12px;
+        font-size:14px;
+        gap:10px;
+    }
+
+    .sidebar ul li a img{
+        width:35px;
+        height:35px;
+        padding:5px;
+    }
+
+    /* MAIN CONTENT */
+    main{
+        padding:10px;
+    }
+
+    .content{
+        padding:18px;
+    }
+
+    .content h2{
+        font-size:24px;
+        line-height:1.3;
+    }
+
+    .intro{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    /* STEP CARDS */
+    .step{
+        padding:20px;
+        gap:15px;
+    }
+
+    .step img{
+        width:65px;
+        height:65px;
+    }
+
+    .step-text h3{
+        font-size:22px;
+    }
+
+    .step-text p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    /* BUTTONS */
+    .excel-link,
+    .submit-btn{
+        width:100%;
+        text-align:center;
+        font-size:15px;
+    }
+
+    /* ROUTE BUTTONS */
+    .route-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .route-btn{
+        min-height:80px;
+        font-size:15px;
+        padding:15px;
+    }
+
+    .route-btn img{
+        width:45px;
+        height:45px;
+    }
+
+    /* NEWS */
+    .news-container{
+        grid-template-columns:1fr;
+    }
+
+    .card-image{
+        height:auto;
+        max-height:300px;
+    }
+
+    /* FORM */
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+        font-size:14px;
+        padding:12px;
+    }
+
+    /* MODAL */
+    .close-btn{
+        top:10px;
+        right:20px;
+        font-size:40px;
+    }
+
+    .modal-image{
+        max-width:95%;
+        max-height:85%;
+    }
+
+    /* EVACUATION IMAGE */
+    .evacuation-image-container{
+        padding:10px;
+    }
+
+    /* FOOTER */
+    footer{
+        padding:18px;
+        font-size:14px;
+    }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px){
+
+    .header-text h1{
+        font-size:18px;
+    }
+
+    .content h2{
+        font-size:20px;
+    }
+
+    .step-text h3{
+        font-size:18px;
+    }
+
+    .route-btn{
+        font-size:14px;
+    }
+
+    .excel-link,
+    .submit-btn{
+        padding:12px;
+        font-size:14px;
+    }
+}
