@@ -921,3 +921,31 @@ MOBILE IMPROVEMENTS
         font-size:13px;
     }
 }
+/* =========================================
+   BACK TO MAIN WEBSITE BUTTON
+========================================= */
+
+.back-home{
+    width:100%;
+    background:#061b3a;
+    padding:15px;
+    text-align:center;
+    border-bottom:2px solid #c8a74d;
+}
+
+.back-home a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    padding:12px 25px;
+    border:2px solid #c8a74d;
+    border-radius:8px;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.back-home a:hover{
+    background:#c8a74d;
+    color:#061b3a;
+}
