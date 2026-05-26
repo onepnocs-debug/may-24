@@ -925,27 +925,79 @@ MOBILE IMPROVEMENTS
    BACK TO MAIN WEBSITE BUTTON
 ========================================= */
 
+/* =========================================
+   BACK TO MAIN WEBSITE
+========================================= */
+
 .back-home{
     width:100%;
-    background:#061b3a;
-    padding:15px;
+    background:
+    linear-gradient(to right,
+    #02152d,
+    #0a2f5c,
+    #02152d);
+
+    padding:18px 20px;
+
     text-align:center;
+
+    border-top:2px solid #c8a74d;
     border-bottom:2px solid #c8a74d;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.4);
 }
+
+/* BUTTON */
 
 .back-home a{
-    color:white;
+
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    padding:14px 32px;
+
     text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
     font-weight:600;
-    font-size:15px;
-    padding:12px 25px;
+
+    letter-spacing:1px;
+
     border:2px solid #c8a74d;
-    border-radius:8px;
-    transition:0.3s;
-    display:inline-block;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(135deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02));
+
+    backdrop-filter:blur(6px);
+
+    transition:0.35s ease;
+
+    box-shadow:
+    0 0 10px rgba(200,167,77,0.25),
+    inset 0 0 10px rgba(255,255,255,0.05);
 }
 
+/* HOVER EFFECT */
+
 .back-home a:hover{
-    background:#c8a74d;
+
+    transform:translateY(-3px) scale(1.03);
+
+    background:
+    linear-gradient(135deg,
+    #c8a74d,
+    #ffd369);
+
     color:#061b3a;
+
+    box-shadow:
+    0 0 20px rgba(255,211,105,0.6),
+    0 8px 20px rgba(0,0,0,0.4);
 }
